@@ -5,7 +5,7 @@ import ErrorPage from './pages/404.vue';
 
 const routes = [
     {
-      name: '/', path: '/page', component: Design
+      name: '/', path: '/page', component: Home
     },
     {
       name: 'design', path: '/page/design', component: Design

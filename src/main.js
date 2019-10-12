@@ -6,10 +6,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/common.css';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost/pagedesign-consumer';
+axios.defaults.baseURL = 'http://localhost:8090/pagedesign-provider';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.put['Content-Type'] = 'application/json';
-axios.defaults.headers.withCredentials=true;
+axios.defaults.headers.withCredentials = true;
 
 //引入ElementUI
 Vue.use(ElementUI);
@@ -17,13 +17,12 @@ Vue.use(ElementUI);
 //引入vue-router
 Vue.use(VueRouter);
 const router = new VueRouter({
-  mode: 'history',
-  routes: routes
+    mode: 'history',
+    routes: routes
 });
 
 const app = new Vue({
     el: '#app',
-    data: {
-    },
+    data: {},
     router: router
 });
